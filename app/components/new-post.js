@@ -6,16 +6,18 @@ export default Ember.Component.extend({
     postFormShow() {
       this.set('addNewPost', true);
     },
-
-    savePost1() {
+    savePost() {
       var params = {
-        author: this.get('author'),
-        title: this.get('title'),
-        content: this.get('content'),
-        image: this.get('image'),
+        author: this.get('author') ? this.get('author') : "",
+        title: this.get('title') ? this.get('title') : "",
+        content: this.get('content') ? this.get('content') : "",
+        image: this.get('image') ? this.get('image') : "",
       };
       this.set('addNewPost', false);
       this.sendAction('savePost', params);
+    },
+    hideForm() {
+      this.set('addNewPost', false);
     }
   }
 });

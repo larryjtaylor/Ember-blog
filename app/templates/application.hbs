@@ -1,9 +1,12 @@
   <header class= "jumbotron">
-    <h1 id='heading'>Pasta and Stuff</h1>
-    {{#link-to 'about'}}About{{/link-to}}
+  <h1 id='heading'>Pasta and Stuff</h1>
+  <div id='buttons'>
+    <div class='btn btn-default'>{{#link-to 'index'}}Home{{/link-to}}</div>
+    <div class='btn btn-default'>{{#link-to 'about'}}About{{/link-to}}</div>
+    <div class='btn btn-default'>{{#link-to 'contact'}}Contact{{/link-to}}</div>
+  </div>
   </header>
     {{outlet}}
-  <hr>
   <footer>
-    <h4 id='footer'>Copyright Dylarry, Inc. 2017</h4>
+    <h4 id="footer">Copyright Dylarry, Inc. 2017</h4>
   </footer>

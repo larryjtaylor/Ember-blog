@@ -2,22 +2,32 @@
   <h1> The Ultimate Blog</h1>
   <h1>I assume since you're here you care what I have to say</h1>
 
-  <h2>Blog posts</h2>
+  <div class="well">
+    <h2>Blog posts</h2>
 
-  <ul class="list-unstyled">
-    {{#each model.posts as |post|}}
+    <ul class="list-unstyled">
+      {{#each model.posts as |post|}}
       {{post-tile post=post}}
-    {{/each}}
-  </ul>
+      {{/each}}
+    </ul>
 
-  {{new-post savePost="savePost"}}
+    {{new-post savePost="savePost"}}
+  </div>
+  <div class="well">
+    <div class="row">
+      <div class="col-md-6">
+        <h2> Comments </h2>
 
-  <h2> Comments </h2>
-
-  <ul>
-  {{#each model.comments as |comment|}}
-    <li>{{comment.author}} - {{comment.content}}</li>
-  {{/each}}
-</ul>
-{{new-comment saveComment="saveComment"}}
+        <ul>
+          {{#each model.comments as |comment|}}
+          <li>{{comment.author}} - {{comment.content}}</li>
+          {{/each}}
+        </ul>
+        {{new-comment saveComment="saveComment"}}
+      </div>
+      <div class="col-md-6">
+        <img src="http://www.nationalstereotype.com/wp-content/uploads/2017/03/italian-267x320.jpg" alt="Mama Mia" />
+      </div>
+    </div>
+  </div>
 </div>
