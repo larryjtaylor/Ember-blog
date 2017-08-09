@@ -1,0 +1,14 @@
+{"posts": [{
+  "author": "George Lucas",
+  "title": "How to commit murder and get away with it",
+  "content": "Pull an OJ",
+  "image": "http://www.thedesignwork.com/wp-content/uploads/2011/10/Random-Pictures-of-Conceptual-and-Creative-Ideas-02.jpg"
+}],
+"comments": [{
+  "author": "Lilly Simmons",
+  "content": "This was awful"
+}, {
+  "author": "Bob Leroy",
+  "content": "Retire from blogging pls"
+  }]
+}

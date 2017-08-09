@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+  <header class= "jumbotron">
+    <h1 id='heading'>Pasta and Stuff</h1>
+    {{#link-to 'about'}}About{{/link-to}}
+  </header>
+    {{outlet}}
+  <hr>
+  <footer>
+    <h4 id='footer'>Copyright Dylarry, Inc. 2017</h4>
+  </footer>

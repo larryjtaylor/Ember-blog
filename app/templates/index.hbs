@@ -1,0 +1,23 @@
+<div class="container">
+  <h1> The Ultimate Blog</h1>
+  <h1>I assume since you're here you care what I have to say</h1>
+
+  <h2>Blog posts</h2>
+
+  <ul class="list-unstyled">
+    {{#each model.posts as |post|}}
+      {{post-tile post=post}}
+    {{/each}}
+  </ul>
+
+  {{new-post savePost="savePost"}}
+
+  <h2> Comments </h2>
+
+  <ul>
+  {{#each model.comments as |comment|}}
+    <li>{{comment.author}} - {{comment.content}}</li>
+  {{/each}}
+</ul>
+{{new-comment saveComment="saveComment"}}
+</div>
