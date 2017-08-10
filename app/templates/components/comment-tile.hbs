@@ -1,3 +1,5 @@
 <li>{{comment.content}} - by {{comment.author}}</li>
 
+{{update-comment comment=comment updateComment="updateComment"}}
+
 <button {{action 'delete' comment}}>Delete comment</button>

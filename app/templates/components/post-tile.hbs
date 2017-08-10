@@ -1,6 +1,6 @@
 
 <li>
-  <div id='blogName'>{{post.author}}'s blog:<br> {{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</div><br>
+  <div id='blogName'>{{post.author}}'s blog: {{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</div><br>
   {{#if isImageShowing}}
     <p><img src={{post.image}} alt={{post.title}} {{action 'imageHide'}} id='picture'></p>
   {{else}}

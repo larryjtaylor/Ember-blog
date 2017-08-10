@@ -6,9 +6,9 @@
     <h2>Blog posts</h2>
 
     <ul class="list-unstyled">
-      {{#each model.posts as |post|}}
-      {{post-tile post=post}}
-      {{/each}}
+          {{#each model.posts as |post|}}
+          {{post-tile post=post}}
+          {{/each}}
     </ul>
 
     {{new-post savePost="savePost"}}
