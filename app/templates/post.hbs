@@ -2,5 +2,7 @@
   <h2>More information about {{post.author}}'s blog post</h2>
   {{update-post post=model update="update"}}
 
-  {{post-detail post=model destroyPost="destroyPost"}}
+  {{post-detail post=model destroyPost="destroyPost" destroyComment="destroyComment"}}
+
+  {{new-comment saveComment="saveComment" post=model}}
 </div>

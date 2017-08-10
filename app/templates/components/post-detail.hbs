@@ -4,5 +4,12 @@
   <p>{{post.content}}</p>
   <p><img src={{post.image}} alt={{post.title}} id='picture'></p>
 
+  <h2> Comments </h2>
+    <ul>
+      {{#each post.comments as |comment|}}
+        {{comment-tile comment=comment destroyComment="destroyComment"}}
+      {{/each}}
+    </ul>
+
   <button {{action 'delete' post}}>Delete</button>
 </div>

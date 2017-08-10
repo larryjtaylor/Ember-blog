@@ -8,8 +8,12 @@ export default Ember.Component.extend({
       }
     },
 
+    destroyComment(comment) {
+      this.sendAction('destroyComment', comment);
+    },
+
     update(post, params) {
       this.sendAction('update', post, params);
-    }  
+    }
   }
 });
